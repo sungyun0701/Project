@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Switch_0423">
+
+    <Switch
+        android:id="@+id/switch_visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="60dp"
+        android:switchPadding="20dp"
+        android:text="글자 보이기" />
+
+    <Switch
+        android:id="@+id/switch_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="60dp"
+        android:switchPadding="50dp"
+        android:text="진하게" />
+
+    <Switch
+        android:id="@+id/switch_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="60dp"
+        android:switchPadding="51dp"
+        android:text="빨간색" />
+
+    <TextView
+        android:id="@+id/text_switch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="50dp"
+        android:text="Hello~~" />
+</LinearLayout>

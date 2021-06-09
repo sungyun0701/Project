@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mylabf">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLabf">
+        <activity android:name=".JoyStick_0428"></activity>
+        <activity android:name=".RecycleView_0426" />
+        <activity android:name=".CustomDialog_0426" />
+        <activity android:name=".DatePicker_0426" />
+        <activity android:name=".Alert_0426" />
+        <activity android:name=".PopupMenu_0426" />
+        <activity android:name=".ActionBar_0426" />
+        <activity android:name=".OptionMenu_0426" />
+        <activity android:name=".SeekBar_0423" />
+        <activity android:name=".Switch_0423" />
+        <activity android:name=".Rating_0423" />
+        <activity android:name=".Toggle_0423" />
+        <activity android:name=".CheckEvent_0423" />
+        <activity android:name=".Event1_0423" />
+        <activity android:name=".Temperature" />
+        <activity android:name=".Date_0423" />
+        <activity android:name=".Intent_C" />
+        <activity android:name=".Intent_P" />
+        <activity android:name=".BaseButton" />
+        <activity android:name=".Layout2" />
+        <activity android:name=".Layout1" />
+        <activity android:name=".Radio_0422" />
+        <activity android:name=".ImageChange_0421" />
+        <activity android:name=".Operator_0421" />
+        <activity android:name=".Number_0420" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

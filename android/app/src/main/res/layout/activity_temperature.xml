@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Temperature">
+
+    <TextView
+        android:id="@+id/textCent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="섭씨(oC)"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editCent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="36.5" />
+
+    <EditText
+        android:id="@+id/editFha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="0.0" />
+
+    <TextView
+        android:id="@+id/textFha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="화씨(oF)"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_Fha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="섭씨를 화씨(oF)로" />
+
+        <RadioButton
+            android:id="@+id/radio_Cent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="화씨를 섭씨(oC)로" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+</LinearLayout>

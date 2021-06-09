@@ -1,0 +1,4 @@
+include ':joystickView'
+include ':app'
+project(':joystickView').projectDir = new File(rootDir, 'JoystickView-master/joystickView/')
+rootProject.name = "MyLabf"
