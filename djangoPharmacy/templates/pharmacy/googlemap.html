@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #map{
+            width: 600px;
+            height: 600px;
+             display: flex;
+        }
+        #pharmacy_info{
+            width: 850px;
+            display: flex;
+
+        }
+        .container{
+            display: flex;
+        }
+        #content_header {
+            color: blue;
+        }
+
+        #content_body {
+            font-size: smaller;
+        }
+        .odd{
+            background-color :  #f3e1ac;
+        }
+        .even{
+            background-color :  #eacaa1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="map"></div>
+
+    <div id="pharmacy_info">
+        <table border="1px"  >
+        <thead>
+        <tr align="center" bgcolor="#d58721">
+            <td width="50px">번호</td>
+            <td width="150px">이름</td>
+            <td width="450px">주소</td>
+            <td width="200px">위치</td>
+        </tr>
+        <thead>
+        <tbody>
+        {% for item in pharmacy_list %}
+
+        <tr id="{{ item.cnt }}" class="{% cycle 'odd' 'even' %}" onmouseover='checkpharm()'>
+            <td>{{ item.cnt }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.latitude }},{{ item.longitude }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    function initMap() {
+        {#const myLatLng = { lat: 35.88107, lng: 128.62707 };#}
+        const myLatLng = { lat: {{ lat }}, lng: {{ lng }} };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: myLatLng,
+        });
+
+        let infowindow = new google.maps.InfoWindow();
+        let marker, i;
+        let contentString;
+        let initcolor;
+        {% for item in pharmacy_list %}
+            marker = new google.maps.Marker({
+                position: { lat: {{  item.latitude }}, lng: {{ item.longitude }} },
+                map,
+                icon : '/static/icons/medicine1.png',
+            });
+
+            google.maps.event.addListener(marker, 'mouseover', (function(marker, i) {
+                    return function() {
+
+                        contentString = '<div id="content_header">' + '{{ item.name }}' +
+                            '<hr></div>' +
+                            '<div id="content_body">' + '{{ item.address }}'  +
+                            '</div>';
+                        infowindow.setContent(contentString);
+                        infowindow.open(map, marker);
+                        initcolor = document.getElementById('{{ item.cnt }}').style.backgroundColor;
+
+                        document.getElementById('{{ item.cnt }}').style.backgroundColor= "red";
+
+
+                    }
+                })(marker, i));
+
+            google.maps.event.addListener(marker, 'mouseout', (function(marker, i) {
+                    return function() {
+                        document.getElementById('{{ item.cnt }}').style.backgroundColor= initcolor;
+                    }
+                })(marker, i));
+        {% endfor %}
+
+
+
+        const marker1 = new google.maps.Marker({
+            position: myLatLng,
+            map,
+            title: '{{address}}',
+        });
+
+        const info = new google.maps.InfoWindow({
+            content: '{{address}}',
+        });
+        info.open(map, marker1);
+
+        const circle = new google.maps.Circle({
+            strokeColor: "#FF0000",
+            {#선선 깔#}
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35,
+            map,
+            center: myLatLng,
+            radius: {{radius}},
+        });
+    }
+</script>
+
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAQCdTZ49zdFnOVyByYUz_eojJT1YDfEc&callback=initMap">
+</script>

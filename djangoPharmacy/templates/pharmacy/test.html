@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'pharmacy:test' %}" method="post">
+    {% csrf_token %}
+    주소 :
+    <input type="text" name="address">
+    검색 반경(m) :
+    <input type="number" name="radius" min="500" max="3000" step="100">
+    <input type="submit" value="검색">
+</form>
+</body>
+</html>
