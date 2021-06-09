@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zz</title>
+    <style>
+        .id1{
+            display: inline-block;
+            width: 250px; height: 200px;
+        }
+    </style>
+</head>
+<body>
+{% for movie in movies %}
+    {#        <span>{{ movie.seq }}</span>#}
+    {#        <img src="data:image/png;base64, {{ movie.im_b64_docode }}">#}
+    <div class="id1">
+        <div style="width: 100px;">
+            <img src="data:image/png;base64, {{ movie.im_b64_docode }}" >
+        </div>
+        <div style="width: 150px;">
+            순위<<span>{{ movie['seq'] }}</span><br>
+            제목: <span>{{ movie['movie_title'] }}</span><br>
+            타겟: <span>{{ movie['estimated_target'] }}</span><br>
+            장르: <span>{{ movie['movie_type'] }}</span>
+        </div>
+        <hr>
+    </div>
+{% endfor %}
+
+</body>
+</html>
