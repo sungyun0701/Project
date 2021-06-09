@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<body>
+
+	<div id="global-navbar" layout:fragment="navbar">
+		<nav class="gnb">
+			<a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+			<ul>
+				<li><a th:href="@{/}">Home</a></li>
+				<li><a th:href="@{/user/test}">학습</a></li>
+				<li><a th:href="@{/user/exam}">실전</a></li>
+				<li><a th:href="@{/user/game}">게임</a></li>
+				<li><a th:href="@{/user/etc}">그외 사이트</a></li>
+				<li><a th:href="@{/user/scorelist}">점수 확인</a></li>
+				<li><span sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/admin/score_list}">관리자 점수확인</a></span></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>Lotto 입력</title>
+<style>
+	.contain {
+		text-align: center;
+		margin: 5px auto;
+		}
+	
+	.fon {
+		font-family: 'Jua', sans-serif;
+		}
+</style>
+</head>
+<body>
+	<div layout:fragment="content">
+		<section class="log">
+				<div class="contain">
+					<form th:action="@{/user/lotto_show}" method="post">
+						<div class="fon">
+							<h3>로또 번호 입력 해보자~</h3>
+						</div>
+						<div class="fon">
+							<input type="text" name="value1">
+							<input type="text" name="value2">
+							<input type="text" name="value3">
+							<input type="text" name="value4">
+							<input type="text" name="value5">
+							<input type="text" name="value6">
+						</div>
+						<div>
+							<h3></h3>
+						</div>
+						<div>
+							<input type="submit" class="btn btn-success fon" value="확인">
+						</div>
+					</form>
+				</div>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>BMI</title>
+
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+
+			<form th:action="@{/user/bmi_result}" method="post">
+				<table>
+					<tr>
+						<td class="table-secondary">키(cm)</td>
+						<td><input type="text" name="k"></td>
+					</tr>
+					<tr>
+						<td class="table-secondary">몸무게(kg)</td>
+						<td><input type="text" name="w"></td>
+					</tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="BMI 계산" class="btn btn-success"></td>
+				</table>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

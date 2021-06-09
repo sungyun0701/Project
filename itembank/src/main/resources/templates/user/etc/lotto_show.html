@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+
+<title>로또 생성</title>
+
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+
+
+			<h2 style="margin-top: 50px;font-family: 'Jua', sans-serif;font-size: 100px;" align="center" class="fon">LOTTO!!!</h2>
+			<div class="lottocontain">
+				<div class="badge rounded-pill bg-primary lottocircle"
+					th:text="${result[0]}"></div>
+				<div class="badge rounded-pill bg-secondary lottocircle"
+					th:text="${result[1]}"></div>
+				<div class="badge rounded-pill bg-success lottocircle"
+					th:text="${result[2]}"></div>
+				<div class="badge rounded-pill bg-danger lottocircle"
+					th:text="${result[3]}"></div>
+				<div class="badge rounded-pill bg-warning text-dark lottocircle"
+					th:text="${result[4]}"></div>
+				<div class="badge rounded-pill bg-info text-dark lottocircle"
+					th:text="${result[5]}"></div>
+				<div style="font-size: 50px;" class="fon">+</div>
+				<div class="badge bg-dark lottocircle" th:text="${result[6]}"
+					style="color: white"></div>
+			</div>
+			<div style="margin-top: 50px;font-family: 'Jua', sans-serif;font-size: 20px;" align="center" class="fon">
+				<h4>나의 번호 : [[${mynum[0]}]], [[${mynum[1]}]], [[${mynum[2]}]],
+					[[${mynum[3]}]], [[${mynum[4]}]], [[${mynum[5]}]]</h4>
+			</div>
+			<div th:text="${cnt}"></div>
+			<div align="center" th:value="${answer}" class="fon">
+				<h4>당첨결과 : [[${answer}]]</h4>
+			</div>
+
+
+		</section>
+	</div>
+</body>
+</html>
+

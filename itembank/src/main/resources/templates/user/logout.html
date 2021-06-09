@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+<title>logout</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="logout">
+			<h1><i class="fas fa-user-alt-slash"></i> CHECK</h1>
+			<P><sec:authentication="principal">로그아웃 하시겠습니까?</P>
+			<form class="lgoutbutton" th:action="@{/user/logout_result}" method="post">
+				<button type="submit" class="badge rounded-pill bg-secondary">YES</button>
+			</form>
+			<form class="lgoutbutton" action="/">
+				<button type="submit" class="badge rounded-pill bg-secondary">NO</button>
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

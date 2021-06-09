@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+
+<meta charset="utf-8">
+<title>퀴즈</title>
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+			<form th:action="@{/user/quiz}" method="post">
+				<input type="text" name="kind"> 
+				<input type="submit" value="확인">
+			</form>
+		</section>
+
+	</div>
+
+</body>
+</html>

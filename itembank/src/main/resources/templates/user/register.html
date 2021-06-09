@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+
+<meta charset="utf-8">
+<title>회원 등록</title>
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="contents">
+		
+			<form th:action="@{/user/register}" enctype="multipart/form-data" th:object="${info}" method="post">
+				<div class="card border-info mb-3 container" style="width: 23rem;color: black">
+				 <!--  style="max-width: 50rem;color: black">-->
+					<div class="card-header" align="center" style="font-size:  27px; font-weight: bold; line-height: 1.7;">회원 가입</div>
+					<div class="card-body">
+						<h5 class="card-title">Create your ID</h5>
+						<div class="mb-3">
+							<label for="username" class="form-label">ID</label> 
+							<input	type="text" class="form-control" id="username" name="username" th:field="*{username}" placeholder="빈칸 안됨~">
+								<div th:text="${checking}" name = "checking", style = "color: black">아이디 확인 바람</div>
+							<div th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
+							
+						</div>
+						
+						<div class="mb-3">
+							<label for="password" class="form-label">비밀번호</label> <input
+								type="password" class="form-control" id="password" th:field="*{password}"
+								name="password">
+							<div th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+						</div>
+						<div class="mb-3">
+							<label for="file" class="form-label">사진</label> <input
+								type="file" class="form-control" id="file" name="file">
+						
+						</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">이메일</label> <input
+								type="email" class="form-control" name="email" id="email" th:field="*{email}">
+							<div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+						</div>
+						<div align="center">
+							<button type="submit" class="btn btn-secondary" value="확인" name="confirm">정보등록</button>
+						</div>
+					</div>
+				</div>		 
+			</form>
+		</section>
+	</div>
+
+</body>
+</html>

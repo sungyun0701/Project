@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+
+<meta charset="utf-8">
+<title>회원 등록</title>
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="contents">
+	<table class="table table-striped" width="350" style="color: white;">
+		<tr>
+			<td colspan ="7" style = "font-size: 30pt;" >성 적 관 리</td><td>
+			
+		</tr>
+		<tr>
+			<th>아이디</th>
+			<th>사진</th>
+			<th>수도</th>
+			<th>넌센스</th>
+			<th>속담</th>
+			<th>일반상식</th>
+			<th>총점</th>
+			<th>평균</th>
+		</tr>
+		<tr th:each="user : ${userscore}">
+			<td th:text="${user.username}"></td>
+			<td><img width="50px" height = "50px" th:src = "|/user/get_image/${user.username}|"></td>
+			<td th:text="${user.capital}"></td>
+			<td th:text="${user.nonsense}"></td>
+			<td th:text="${user.proverb}"></td>
+			<td th:text="${user.trivia}"></td>
+			<td th:text="${user.total}"></td>
+			<td th:text="${user.aver}"></td>
+		
+		</tr>
+	</table>
+	</section>
+</div>
+</body>
+</html>

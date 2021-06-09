@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head layout:replace="~{layout/head :: head}">
+<meta charset="UTF-8" />
+<title layout:title-pattern="$LAYOUT_TITLE : $CONTENT_TITLE">Item_Bank</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<div layout:replace="~{layout/header::header}"></div>
+			<div layout:replace="~{layout/navi::navbar}"></div>
+		
+
+		<div layout:fragment="content">
+		<script type="text/javascript" th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+		<script type="text/javascript" th:src="@{/webjars/bootstrap/4.5.3/js/bootstrap.min.js}"></script>
+		</div>
+		<div layout:replace="~{layout/footer::footer}"></div>
+	</div>
+</body>
+</html>

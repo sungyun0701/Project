@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>result</title>
+
+</head>
+<body>
+<div layout:fragment="content">
+<section class="log" style="text-align:center;font-size:30px;">
+<span th:text="${username}"></span><span>님 점수는</span>
+<div th:text="${subject}"></div>
+<div th:text="${score}"></div>
+</section>
+</div>	
+</body>
+</html>

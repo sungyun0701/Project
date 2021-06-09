@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>등록 완료</title>
+</head>
+<body>
+<div layout:fragment="content">
+	
+<div class = "logre">
+<i class="fab fa-the-red-yeti fa-8x" style="color:yellow" ></i><br>
+<div th:text="${register_result}"></div>
+<div sec:authorize ="permitAll"><a th:href="@{/user/login}"><span class="badge rounded-pill bg-secondary">로그인</span></a></div>
+</div>	
+</div>
+</body>
+</html>

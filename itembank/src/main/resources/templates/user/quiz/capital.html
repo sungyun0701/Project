@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>Quiz</title>
+
+</head>
+<body>
+	<div layout:fragment="content">
+			<section class="log" style="text-align:center;font-size:30px;">
+				<div id="question"></div>
+				<div><input type="text" id="answer" style="width:250px;"></div>
+				<div id="etc"></div>
+				<div>
+					<button class="btn btn-secondary" onclick="myQuiz();" id="button_click"></button>
+					<form th:action="@{/user/quiz/result}" method="get">
+						<input type = "hidden" id="count" name="count" value="0">
+						<input type = "hidden" name="subject" value="capital">
+					
+						<button class="btn btn-secondary" type="submit" id="submit_btn">점수 확인</button>
+					</form>
+				</div>
+				
+			</section>	
+	</div>
+</body>
+</html>
+
+<script th:inline="javascript">
+//<![CDATA[
+	
+	
+	var number = 0;
+	var count = 0;
+	var aList = /*[[${questionList}]]*/[];
+	(function myQuiz(){
+		if((number+1)!=aList.length){
+			document.getElementById("button_click").innerText="다음문제";
+			document.getElementById("submit_btn").style="display:none;";
+		}
+		else{
+			document.getElementById("button_click").style="display:none;";
+			
+		}
+		
+		
+        document.getElementById("question").innerHTML=(number+1)+"/"+(aList.length)+"  "+aList[number].question+"의 수도는??";
+        var reply =document.getElementById("answer").value;
+        
+        
+        document.getElementById("etc").innerHTML= aList[number].etc;
+		if (reply==aList[number].answer){
+        	count++;
+        	document.getElementById("count").value=count;
+        }
+		
+        number++;
+        document.getElementById("number").innerText = number;
+	}());
+	function myQuiz(){
+		if((number+1)!=aList.length){
+			document.getElementById("button_click").innerText="다음문제";
+			
+		}
+		else{
+			document.getElementById("button_click").style="display:none;";
+			document.getElementById("submit_btn").style="display:inline;";
+		}
+		
+        document.getElementById("question").innerHTML=(number+1)+"/"+(aList.length)+"  "+aList[number].question+"의 수도는??";
+        var reply =document.getElementById("answer").value;
+        console.log(reply);
+        
+        document.getElementById("etc").innerHTML= aList[number].etc;
+
+		if (reply==aList[number-1].answer){
+        	count++;     	
+        	document.getElementById("count").value=count; 
+        }
+		document.getElementById("answer").value = "";
+        number++;
+        console.log("count"+count);
+        console.log(number);
+        console.log(aList.length);
+	}
+	
+//]]>
+</script>

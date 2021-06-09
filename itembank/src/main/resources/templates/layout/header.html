@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<body>
+
+	<header id="global-header" layout:fragment="header">
+		<div class="innerHeader">
+			<h1 class="logo">
+				<a href="/"> <img th:src="@{/images/hm1.png}" alt="로고">
+					<img th:src="@{../images/hm2.png}" alt="로고2">
+				</a>
+			</h1>
+			<h2 class="intoTxt">
+				<span sec:authorize="isAnonymous()"> H.Maker</span> 
+				<span sec:authorize="isAuthenticated()"><span sec:authentication="principal"></span><span>님</span></span>
+			</h2>
+			<a href="#" class="menuOpen">MENU <span class="lnr lnr-menu"></span></a>
+		</div>
+
+	</header>
+
+</body>
+</html>

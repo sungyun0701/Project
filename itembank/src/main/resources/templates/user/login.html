@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>회원 등록</title>
+
+</head>
+<body>
+	<div layout:fragment="content">
+		<form th:action="@{/user/login}" method="post">
+			<section class="log">
+				<div class="loginwrap">
+			<!-- 	style="width : 300px; padding: 0 auto;"> -->
+					<div class="mb-3">
+						<label for="id" class="form-label">ID</label>
+						<input type="text" class="form-control"id="id" name="username" placeholder="공백은 안됩니다.">
+						<div id="idhelp" class="form-text">No EMPTY</div>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control"
+							id="exampleInputPassword1" name="password"placeholder="공백은 안됩니다.">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			</section>
+			
+		</form>
+
+	</div>
+</body>
+</html>

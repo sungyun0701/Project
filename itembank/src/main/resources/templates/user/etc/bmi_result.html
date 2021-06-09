@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>BMI</title>
+
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+
+			<div class="contain">
+		<table boder = "1px solid blueviolet">
+			<tr>
+				<td class="table-secondary">키(cm)</td>
+				<td th:text="${bmi.k}"></td>
+			</tr>
+			<tr>
+				<td class="table-secondary">몸무게(kg)</td>
+				<td th:text="${bmi.w}"></td>
+			</tr>
+			<tr>
+				<td class="table-secondary">BMI</td>
+				<td th:text="${bmi.bmi}"></td>
+			</tr>
+			<tr>
+				<td class="table-secondary">결과</td>
+				<td ><input type ="radio" name = "what" th:checked= "${bmi.what}==저체중">저체중<br>
+					<input type ="radio" name = "what" th:checked= "${bmi.what}==정상">정상<br>
+					<input type ="radio" name = "what" th:checked= "${bmi.what}==과체중">과체중<br>
+					<input type ="radio" name = "what" th:checked= "${bmi.what}==경도비만">경도비만<br>
+					<input type ="radio" name = "what" th:checked= "${bmi.what}==비만">비만
+				</td>
+			</tr>
+
+		</table>
+	</div>
+		</section>
+	</div>
+</body>
+</html>

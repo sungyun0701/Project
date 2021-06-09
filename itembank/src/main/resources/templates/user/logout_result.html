@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+<title>Logout</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="logoutre">
+			<img src="/images/bye.jpg"alt="bye">
+			<h1>잘가시게나</h1>
+			<p>로그아웃 완료</p>
+			<form action="/">
+				<span class="logoutbutton"><button type="submit" class="badge rounded-pill bg-secondary">홈으로</button></span>
+			</form>
+
+		</div>
+</body>
+</html>

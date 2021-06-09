@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	layout:decorate="~{layout/layout}">
+<head>
+
+<meta charset="utf-8">
+<title>퀴즈</title>
+</head>
+<body>
+
+	<div layout:fragment="content">
+		<section class="log">
+			<div id="question"></div>
+			<div><input type="text" id="answer"></div>
+			<div id="etc"></div>
+			<div><button th:if="${number}==3" onclick="myQuiz();">다음문제</button></div>
+			<div><button th:unless="${number}==3" onclick="myQuiz();">마지막문제</button></div>
+			<div id="count" style="display:none;"></div>
+		</section>
+	</div>
+
+</body>
+</html>
+
+<script th:inline="text/javascript">
+//<![CDATA[
+	
+	var number = 0;
+	var count = 0;
+	var aList = /*[[${questionList}]]*/[];
+	window.onload=function myQuiz(){
+		if(number=="3"){
+			document.getElementById("seq").style.display="none";
+			//document.getElementById("count")=count;
+        	//location.replace("https://www.naver.com");
+        }
+        document.getElementById("question").innerHTML=(number+1)+"/"+(aList.length)+"  "+aList[number].question+"의 수도는??";
+        var reply =document.getElementById("answer").value;
+        document.getElementById("etc").innerHTML= aList[number].etc;
+		if (reply==aList[number].answer){
+        	count++;
+        }
+		number++;
+		
+        
+	}
+	
+//]]>
+</script>

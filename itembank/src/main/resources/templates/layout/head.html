@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html 	lang="ko"
+     	xmlns:th="http://www.thymeleaf.org"
+		xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head layout:fragment="head">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/png" th:href="@{../images/hm1.png}">
+	<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">H.Maker</title>
+	
+	<!-- 공통 css -->
+	<link rel="stylesheet" media="all" th:href="@{/webjars/bootstrap/4.5.3/css/bootstrap.min.css}" />
+	<link rel="stylesheet" th:href="@{/webjars/font-awesome/5.15.1/css/all.min.css}"></link>
+	
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    
+    <link rel="stylesheet" th:href="@{/css/animate.min.css}">
+    <link rel="stylesheet" th:href="@{/css/slick.css}">
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap"	rel="stylesheet">
+
+
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/popper.js/1.16.1/popper.min.js}"></script>
+   <script type="text/javascript" th:src="@{/webjars/bootstrap/4.5.3/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src = "@{/js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/script.js}"></script>
+    <script type="text/javascript" th:src="@{/js/scrolla.jquery.min.js}"></script>
+    <script type="text/javascript" th:src = "@{/js/slick.min.js}"></script>
+
+	<!-- 개별 css -->
+	<th:block layout:fragment="css">
+ <link rel="stylesheet" th:href="@{../css/main.css}"/>
+	</th:block>
+</head>
+
+</html>
