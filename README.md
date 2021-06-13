@@ -2,7 +2,7 @@
 ## Project
 
 :point_right: **문제은행(Itembank)**  
-- **언어 및 작업툴**: JAVA(DATA JPA),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql, VScode    
+- **언어 및 작업툴**: JAVA(DATA JPA),HTML,CSS,JAVASCRIPT, JQUERY,thymeleaf // eclipse, Mysql, VScode    
 - **내용**
   - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
   - 문제은행 및 로또 생성기, 섯다 등 다양한 게임을 구현
