@@ -24,7 +24,7 @@
 - **내용**
   - 네이버에서 영화에 대한 정보를 크롤링하여 mongodb에 저장
   - 크롤링 한 데이터를 만든 형식에 적용하여 웹페이지에 표시
-   
+![](/movie.png)   
 <br>
 
 :point_right: **RC카 제어(CameraJoystick)**
