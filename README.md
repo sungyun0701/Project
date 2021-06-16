@@ -18,7 +18,7 @@
 - **내용**
   - mongodb에 약국이름 및 위치에 대한 정보 저장
   - mongodb와 구글맵을 통해 검색한 위치에서 거리내에 있는 약국 검색
-
+![](/django_pharmacy1.png)   
 <br>
 
 :point_right: **영화 순위 표시(flaskNaverMovie_Mongdb)**
