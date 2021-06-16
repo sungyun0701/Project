@@ -2,7 +2,7 @@
 ## Project
 
 :point_right: **문제은행(Itembank)**  
-- **언어 및 작업툴**: JAVA,HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql, VScode 
+- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql, VScode 
 - **프레임** : DATA JPA, thymeleaf   
 - **내용**
   - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
@@ -13,7 +13,7 @@
 <br>
 
 :point_right: **Django를 통한 약국 찾기(djangoPharmacy)**  
-- **언어 및 작업툴**: python // pycharm, mongodb atlas
+- **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas(Version 4.4.6)
 - **프레임** : Django 
 - **내용**
   - mongodb에 약국이름 및 위치에 대한 정보 저장
@@ -22,7 +22,7 @@
 <br>
 
 :point_right: **영화 순위 표시(flaskNaverMovie_Mongdb)**
-- **언어 및 작업툴**: python // pycharm, mongodb atlas
+- **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas
 - **프레임** : flask 
 - **내용**
   - 네이버에서 영화에 대한 정보를 크롤링하여 mongodb에 저장
@@ -31,7 +31,7 @@
 <br>
 
 :point_right: **RC카 제어(CameraJoystick)**
-- **언어 및 작업툴**: python,JAVA // Raspberry Pi, android-studio
+- **언어 및 작업툴**: python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi, android-studio
 - **내용**
   - Joystick 소스코드를 자바로 안드로이드 앱으로 실행되게 작성
   - motion 패키지를 통해 웹상에서 표시되도록 연동
