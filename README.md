@@ -2,7 +2,7 @@
 ## Project
 
 :point_right: **문제은행(Itembank)**  
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql, VScode 
+- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql 8.0, VScode 
 - **프레임** : DATA JPA, thymeleaf   
 - **내용**
   - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
