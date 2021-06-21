@@ -1,7 +1,7 @@
 
 ## Project
 
-:point_right: **문제은행(Itembank)**  
+:point_right: **Solve a QUIZ(Itembank)**  
 - **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql 8.0, VScode 
 - **프레임** : DATA JPA, thymeleaf   
 - **내용**
@@ -12,7 +12,7 @@
 ![](/img1.png)
 <br>
 
-:point_right: **Django를 통한 약국 찾기(djangoPharmacy)**  
+:point_right: **Find Pharmacy within a radius(djangoPharmacy)**  
 - **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas(Version 4.4.6)
 - **프레임** : Django 
 - **내용**
@@ -21,7 +21,7 @@
 ![](/django_pharmacy1.png)   
 <br>
 
-:point_right: **영화 순위 표시(flaskNaverMovie_Mongdb)**
+:point_right: **Movie Data Crawling from naver(flaskNaverMovie_Mongdb)**
 - **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas
 - **프레임** : flask 
 - **내용**
@@ -30,7 +30,7 @@
 ![](/movie.png)   
 <br>
 
-:point_right: **RC카 제어(CameraJoystick)**
+:point_right: **RC Car Control with Motion Package(CameraJoystick)**
 - **언어 및 작업툴**: python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi, android-studio
 - **내용**
   - Joystick 소스코드를 자바로 안드로이드 앱으로 실행되게 작성
