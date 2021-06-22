@@ -8,8 +8,8 @@
   - Mysql과 java를 연동하고 데이터를 주고 받으며, 웹페이지를 생성
   - 문제은행 및 로또 생성기, 섯다 등 다양한 게임을 구현
   - 시큐리티를 적용하여 사용자 권한에 따른 웹페이지 접근 제한 
-  - index(첫화면페이지)는 반응형웹으로 구현(화면 크기에 따른 레이아웃 변화)    
-![](/img1.png)
+  - index(첫화면페이지)는 반응형웹으로 구현(가로길이가 1200,1024,768,650px에 따른 변화)    
+![](/Item_Bank.gif)
 <br>
 
 :point_right: **Find Pharmacy within a radius(djangoPharmacy)**  
@@ -27,7 +27,10 @@
 - **내용**
   - 네이버에서 영화에 대한 정보를 크롤링하여 mongodb에 저장
   - 크롤링 한 데이터를 만든 형식에 적용하여 웹페이지에 표시
-![](/movie.png)   
+![](/movie2.png)
+
+![](/movie3.png)
+
 <br>
 
 :point_right: **RC Car Control with Motion Package(CameraJoystick)**
