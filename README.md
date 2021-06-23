@@ -15,7 +15,7 @@
 ![](/Item_Bank.gif)
 <br>
 
-:point_right: **Find Pharmacy within a radius(djangoPharmacy)**  
+:point_right: **Find Pharmacy within selected radius(djangoPharmacy)**  
 - **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas(Version 4.4.6)
 - **프레임** : Django 
 - **작업기간** :
@@ -23,7 +23,7 @@
   - mongodb에 약국이름 및 위치에 대한 정보 저장
   - mongodb와 구글맵을 통해 검색한 위치에서 거리내에 있는 약국 검색
 - **관련 화면**
-  - 결과화면
+  - 대구역 중심으로 반경 1000m내에 있는 약국 표시
 ![](/pharmacy.png)   
 <br>
 
