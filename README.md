@@ -2,7 +2,7 @@
 ## Project
 
 :point_right: **Solve a QUIZ(Itembank)**  
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT, JQUERY // eclipse, Mysql 8.0, VScode(1.57.1) 
+- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT,JQUERY // eclipse(Version 4.17.0), Mysql 8.0, VScode(Version 1.57.1) 
 - **프레임** : DATA JPA, thymeleaf
 - **작업기간** :   
 - **내용**
@@ -16,7 +16,7 @@
 <br>
 
 :point_right: **Find Pharmacy within selected radius(djangoPharmacy)**  
-- **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas(Version 4.4.6)
+- **언어 및 작업툴**: python(Version 3.9.2) // pycharm(Version 2021.1.2), mongodb atlas(Version 4.4.6)
 - **프레임** : Django 
 - **작업기간** :
 - **내용**
@@ -28,7 +28,7 @@
 <br>
 
 :point_right: **Movie Data Crawling from naver(flaskNaverMovie_Mongdb)**
-- **언어 및 작업툴**: python(Version 3.9.2) // pycharm, mongodb atlas(Version 4.4.6)
+- **언어 및 작업툴**: python(Version 3.9.2) // pycharm(Version 2021.1.2), mongodb atlas(Version 4.4.6)
 - **프레임** : flask 
 - **작업기간** :
 - **내용**
@@ -43,7 +43,7 @@
 <br>
 
 :point_right: **RC Car Control with Motion Package(CameraJoystick)**
-- **언어 및 작업툴**: python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi, android-studio(Version 4.2.1)
+- **언어 및 작업툴**: python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, android-studio(Version 4.2.1)
 - **작업기간** :
 - **내용**
   - Joystick 소스코드를 자바로 안드로이드 앱으로 실행되게 작성
