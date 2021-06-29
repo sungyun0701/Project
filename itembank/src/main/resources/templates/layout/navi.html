@@ -12,9 +12,8 @@
 			<ul>
 				<li><a th:href="@{/}">Home</a></li>
 				<li><a th:href="@{/user/test}">학습</a></li>
-				<li><a th:href="@{/user/exam}">실전</a></li>
-				<li><a th:href="@{/user/game}">게임</a></li>
-				<li><a th:href="@{/user/etc}">그외 사이트</a></li>
+				<li><a th:href="@{/user/game}">문제 은행</a></li>
+				<li><a th:href="@{/user/etc}">그외 게임들</a></li>
 				<li><a th:href="@{/user/scorelist}">점수 확인</a></li>
 				<li><span sec:authorize="hasRole('ROLE_ADMIN')"><a th:href="@{/admin/score_list}">관리자 점수확인</a></span></li>
 			</ul>

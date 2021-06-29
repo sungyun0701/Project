@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계산기</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+	rel="stylesheet">
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+			<form th:action="@{/user/calc_result}" method="post">
+			
+				<div class="container">
+					<table class="table table-bordered" style="color: white; width:450px; margin:0 auto;margin-top:100px;">
+						<tr>
+							<td width="30%" align="center">값1</td>
+							<td width="60%"align="center"><input type="text" name="value1"></td>
+							<td width="10%" rowspan="2"align="center" style="vertical-align: middle;"><select name="sign">
+									<option value="+">+</option>
+									<option value="-">-</option>
+									<option value="*">×</option>
+									<option value="/">÷</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td align="center">값2</td>
+							<td align="center"><input type="text" name="value2"></td>
+							
+						</tr>
+						<tr>
+							<td colspan="3" align="center"><input type="submit" text-align="center"
+								class="btn btn-success" value="확인">
+							</td>
+							
+						</tr>
+					</table>
+
+				</div>
+			</form>
+		</section>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8">
+<title>게임 목록</title>
+</head>
+<body>
+	<div layout:fragment="content">
+		<section class="contents">
+			<div class="project" style ="margin-top : 50px">
+				<ul class="animate" data-animate="fadeInUp" data-duration="1s"
+					data-delay="0s">
+					<li><a th:href="@{/user/quiz/capital}"> <img
+							src="../images/capital.jpg" alt="수도">
+							<div class="name">
+								<span>Subject</span>
+								<h3>Capital</h3>
+							</div>
+					</a></li>
+					<li><a th:href="@{/user/quiz/bmi}"> <img
+							src="../images/trivia1.png" alt="일반상식">
+							<div class="name">
+								<span>Subject</span>
+								<h3>Trivia</h3>
+							</div>
+					</a></li>
+					<li><a th:href="@{/user/quiz/proverb}"> <img
+							src="../images/proverb.jpg" alt="속담">
+							<div class="name">
+								<span>Subject</span>
+								<h3>Proverb</h3>
+							</div>
+					</a></li>
+					<li><a th:href="@{/user/quiz/nonsense}"> <img
+							src="../images/nonsense.jpg" alt="넌센스">
+							<div class="name">
+								<span>Subject</span>
+								<h3>Nonsense</h3>
+							</div>
+					</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

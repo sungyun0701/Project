@@ -9,12 +9,16 @@
 
 </head>
 <body>
-<div layout:fragment="content">
-<section class="log" style="text-align:center;font-size:30px;">
-<span th:text="${username}"></span><span>님 점수는</span>
-<div th:text="${subject}"></div>
-<div th:text="${score}"></div>
-</section>
-</div>	
+	<div layout:fragment="content">
+		<section class="log" style="text-align: center; font-size: 30px;">
+			<form th:action="@{/user/quiz_result}" method="post">
+				<span th:text="${username}" name="username"></span><span>님
+					점수는</span>
+				<div th:text="${subject}" name="subject"></div>
+				<div th:text="${score}" name="score"></div>
+				<button class="btn btn-first" type="submit">랭킹 확인</button>
+			</form>
+		</section>
+	</div>
 </body>
 </html>

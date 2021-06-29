@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hmaker.itembank.etc.Bmi;
+import com.hmaker.itembank.etc.Calc;
 
 
 @Controller
@@ -35,7 +36,7 @@ public class EtcController {
 						@RequestParam("w") double w) {
 
 		Bmi bmi = new Bmi(k,w);
-		
+				
 		model.addAttribute("bmi", bmi);
 		
 		return "user/etc/bmi_result";
@@ -138,6 +139,39 @@ public class EtcController {
 		model.addAttribute("answer", answer);	// 당첨 결과 보내기
 		
 		return "user/etc/lotto_show";
+	}
+	
+	@GetMapping("/user/calc")
+	public String calc_input() {
+		
+		return "user/etc/calc_input";
+	}
+	
+	@PostMapping("/user/calc_result")
+	public String calc_result(Model model,
+							@RequestParam ("value1") int value1,
+							@RequestParam ("value2") int value2,
+							@RequestParam ("sign") String sign) {
+		double result = 0.0;
+		
+		//오브젝트(실체) 생성 방법
+		//객체 지향 프로그래밍 방법
+		Calc calc = new Calc(value1,value2);
+		
+		switch(sign) {
+		case("+"): calc.plus();
+					break;
+		case("-"): calc.minus();
+					break;
+		case("*"): calc.multiply();
+					break;
+		case("/"): calc.divide();
+					break;
+		}
+				
+		model.addAttribute("calc", calc);
+		
+		return "user/etc/calc_result";
 	}
 	
 	@GetMapping("/user/number_baseball")

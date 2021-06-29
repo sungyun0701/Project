@@ -64,7 +64,10 @@ public class QuetionController {
 //		
 //		
 //	}
-	
+	@GetMapping("/user/game")
+	public String gameList() {
+		return "user/gameList";
+	}
 	
 	@GetMapping("/user/quiz/capital")
 	public String quiz_capital(Model model) {

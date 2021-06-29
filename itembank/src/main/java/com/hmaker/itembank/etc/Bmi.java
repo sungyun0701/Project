@@ -16,6 +16,7 @@ public class Bmi {
 	
 	public void calc() {
 		this.bmi = this.w/this.k/this.k*100*100;
+		this.bmi = Math.round((bmi*10000)/10000);
 	}
 
 	public void re() {

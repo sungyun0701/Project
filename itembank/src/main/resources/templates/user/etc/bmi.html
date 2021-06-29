@@ -14,17 +14,21 @@
 		<section class="log">
 
 			<form th:action="@{/user/bmi_result}" method="post">
-				<table>
+				<table 
+					style="margin: 0 auto; margin-top: 100px; color: black; width: 300px; text-align: center;font-size:20px;font-family: 'Do Hyeon', sans-serif;">
 					<tr>
-						<td class="table-secondary">키(cm)</td>
+						<td class="table-secondary" >키(cm)</td>
 						<td><input type="text" name="k"></td>
 					</tr>
 					<tr>
 						<td class="table-secondary">몸무게(kg)</td>
 						<td><input type="text" name="w"></td>
 					</tr>
-					<td colspan="2" align="center"><input type="submit"
-						value="BMI 계산" class="btn btn-success"></td>
+					
+					<tr>
+						<td colspan="2" align="center" height="80"><input type="submit"
+							value="BMI 계산" class="btn btn-success"></td>
+					</tr>
 				</table>
 			</form>
 		</section>

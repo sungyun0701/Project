@@ -44,6 +44,16 @@ public class UserScoreController {
 	
 	}
 	
+	@PostMapping("/user/quiz_result")
+	public String Quiz_result(Model model,
+							@RequestParam("username") String username,
+							@RequestParam("subject") String subject,
+							@RequestParam("score") String score) {
+		Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
+		userscore.set
+		return "user/scorelist";
+	}
+	
 	@GetMapping("/admin/score_list")
 	public String admin_scorelist(Model model) {
 		

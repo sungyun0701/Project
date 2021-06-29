@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계산기</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+	rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div layout:fragment="content">
+
+		<section class="log">
+			<div th:text="${calc.value1}"></div>
+			<div th:text="${calc.value2}"></div>
+			<div th:text="${calc.result}"></div>
+
+			<script src="js/jquery-3.5.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+		</section>
+	</div>
+</body>
+</html>

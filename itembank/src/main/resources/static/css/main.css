@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 /*reset*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
 * {margin: 0; padding: 0;}
@@ -152,7 +152,7 @@ header.on .innerHeader .logo a img:nth-child(2) {opacity: 1; transition: all 0.3
 .contents .partner h3 {font-size: 17px; font-weight: 400;}
 .contents .partner ul {overflow: hidden;}
 .contents .partner ul li {float : left; width: 29%; height: 100px; margin-top: 80px; text-align: center;}
-.contents .partner ul li:nth-child(1),.contents .partner ul li:nth-child(5) {width: 21%; text-align: left;}
+.contents .partner ul li:nth-child(1),.contents .partner ul li:nth-child(5) {width: 21%; text-align: center;}
 .contents .partner ul li:nth-child(4n){text-align: right; width:21%;}
 .contents .partner ul li img{display: inline-block; opacity: 0.4;transition: all 0.3s;}
 .contents .partner ul li:hover img{opacity: 1; transition: all 0.5s;}
@@ -173,8 +173,8 @@ footer ul li:nth-child(3){font-weight: bold;}
 footer .goTop {position: absolute; right: 80px; bottom:50px; font-size: 47px; color: aliceblue;}
 
 /* 로또 */
-.lottocontain {position: relative;border: 2px solid red;border-radius: 15px;width: 900px;text-align: center;margin: 50px -300px auto;display: flex;flex-direction: row;}
-.lottocircle {position: relative;padding-top: 22px;width: 100px;height: 100px;border-radius: 50px;text-align: center;font-size: 40px;margin: 0 auto;}
+.lottocontain {position: relative;border: 2px solid red;border-radius: 15px;width: 900px;align: center;margin: 50px auto;display: flex;flex-direction: row;}
+.lottocircle {position: relative;padding-top: 23px;width: 100px;height: 100px;border-radius: 50px;text-align: center;font-size: 40px;margin: 0 auto;}
 
 /*반응형*/
 /*1200px*/
