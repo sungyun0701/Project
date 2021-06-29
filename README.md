@@ -1,5 +1,6 @@
+# 진행한 프로젝트(4개)
 
-## Project
+## Project_JAVA
 
 :point_right: **Solve a QUIZ(Itembank)**  
 - **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT,JQUERY // Eclipse(Version 4.17.0), Mysql 8.0, VScode(Version 1.57.1) 
@@ -14,6 +15,8 @@
   - 결과 화면    
 ![](/Item_Bank.gif)
 <br>
+
+## Project_Python
 
 :point_right: **Find Pharmacy within selected radius(djangoPharmacy)**  
 - **언어 및 작업툴**: Python(Version 3.9.2) // Pycharm(Version 2021.1.2), Mongodb Atlas(Version 4.4.6)
@@ -43,6 +46,8 @@
 ![](/movie3.png)
 
 <br>
+
+## Project_Android with Raspberry Pi
 
 :point_right: **RC Car Control with Motion Package(CameraJoystick)**
 - **언어 및 작업툴**: Python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, Android-Studio(Version 4.2.1)
