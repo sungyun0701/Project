@@ -2,6 +2,7 @@ package com.hmaker.itembank.controller;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,13 +45,39 @@ public class UserScoreController {
 	
 	}
 	
-	@PostMapping("/user/quiz_result")
-	public String Quiz_result(Model model,
-							@RequestParam("username") String username,
+	@GetMapping("/user/quiz_result")
+	public String Quiz_result_score(Model model,
+							Principal principal,
+//							@RequestParam("username") String username,
 							@RequestParam("subject") String subject,
 							@RequestParam("score") String score) {
-		Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
-		userscore.set
+		System.out.print(subject+"1");
+		UserScore user = (UserScore) userScoreJpaRepository.findByUsernameAndSubject(principal.getName(), subject);
+		System.out.print("1");
+//		if (principal==(null)) {
+//			model.addAttribute("username", "GEST");
+//			model.addAttribute("subject", subject);
+//			model.addAttribute("score", Integer.parseInt(count)*20);
+//		}
+//		else {
+//			String username = principal.getName();
+//			Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
+//			if(userscore.isPresent()) {
+//				UserScore userScore = userscore.orElse(null);
+//				System.out.println(userScore);
+//				userScore.setCapital(Integer.parseInt(count)*20);
+//				System.out.println(userScore);
+//				model.addAttribute("username", username);
+//				model.addAttribute("subject", subject);
+//				model.addAttribute("score", Integer.parseInt(count)*20);
+//			}
+//		}
+		userScoreJpaRepository.save(user);
+		System.out.print("2");
+		List <UserScore> userscoreList = userScoreJpaRepository.no_desc();
+		System.out.print("3");
+		model.addAttribute("userscore", userscoreList);
+		System.out.print("4");
 		return "user/scorelist";
 	}
 	

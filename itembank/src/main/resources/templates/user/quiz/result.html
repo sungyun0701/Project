@@ -11,12 +11,12 @@
 <body>
 	<div layout:fragment="content">
 		<section class="log" style="text-align: center; font-size: 30px;">
-			<form th:action="@{/user/quiz_result}" method="post">
+			<form th:action="@{/user/quiz_result}" method="get">
 				<span th:text="${username}" name="username"></span><span>님
 					점수는</span>
-				<div th:text="${subject}" name="subject"></div>
+				<div th:text="${param.subject}" name="subject" id = "subject"></div>
 				<div th:text="${score}" name="score"></div>
-				<button class="btn btn-first" type="submit">랭킹 확인</button>
+				<button class="btn btn-primary" type="submit">랭킹 확인</button>
 			</form>
 		</section>
 	</div>
