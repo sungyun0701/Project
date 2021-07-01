@@ -14,9 +14,14 @@
 			<form th:action="@{/user/quiz_result}" method="get">
 				<span th:text="${username}" name="username"></span><span>님
 					점수는</span>
-				<div th:text="${param.subject}" name="subject" id = "subject"></div>
+				<div th:text="${subject}"></div>
 				<div th:text="${score}" name="score"></div>
+				<input type = "hidden" id="count" name="count" value="0">
 				<button class="btn btn-primary" type="submit">랭킹 확인</button>
+				<input type = "hidden" name="username" th:value="${username}">
+				<input type = "hidden" name="subject" th:value="${subject}">
+				<input type = "hidden" name="score" th:value="${score}">
+<!-- 				input안의 값만 전달되나... -->
 			</form>
 		</section>
 	</div>

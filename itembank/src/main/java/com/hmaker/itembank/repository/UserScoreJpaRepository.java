@@ -3,8 +3,10 @@ package com.hmaker.itembank.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hmaker.itembank.entity.Question;
 import com.hmaker.itembank.entity.UserScore;
@@ -23,8 +25,24 @@ public interface UserScoreJpaRepository extends JpaRepository<UserScore, String>
 	
 //	StudentScore findByStudentNo (String studentNo);  //두번째 방법 StudentNo jpa method naming rule 따라 써야함 해당클래스
 													 // 칼럼 표시하기 ex>@Column(name="student_no")
-	@Query(value = "SELECT ?2 FROM user_score as u WHERE u.username = ?1", nativeQuery = true)
-//	Page<Question> findQuestionByKind(@Param("kind") String kind);
-	List<UserScore> findByUsernameAndSubject(String username, String subject);
+	@Transactional
+	@Modifying(clearAutomatically = true, flushAutomatically = true)
+	@Query(value = "UPDATE user_score as user SET capital=?1 WHERE username = ?2" , nativeQuery = true)
+	void findUsernameCapital(String score,String username);
+	
+	@Transactional
+	@Modifying(clearAutomatically = true, flushAutomatically = true)
+	@Query(value = "UPDATE user_score as user SET trivia=?1 WHERE username = ?2" , nativeQuery = true)
+	void findUsernameTrivia(String score, String username);
+
+	@Transactional
+	@Modifying(clearAutomatically = true, flushAutomatically = true)
+	@Query(value = "UPDATE user_score as user SET proverb=?1 WHERE username = ?2" , nativeQuery = true)
+	void findUsernameProverb(String score, String username);
+
+	@Transactional
+	@Modifying(clearAutomatically = true, flushAutomatically = true)
+	@Query(value = "UPDATE user_score as user SET nonsense=?1 WHERE username = ?2" , nativeQuery = true)
+	void findUsernameNonsense(String score, String username);
 
 }

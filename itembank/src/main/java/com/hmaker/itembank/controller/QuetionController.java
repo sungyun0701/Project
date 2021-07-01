@@ -73,10 +73,9 @@ public class QuetionController {
 	public String quiz_capital(Model model) {
 	
 		List<Question> questionList = questionJpaRepository.findQuestionByKind("capital");
-		List<Quiz> quiz = new ArrayList();
-		System.out.println(questionList);
-		
+//		List<Quiz> quiz = new ArrayList();
 		model.addAttribute("questionList", questionList);
+		System.out.println(questionList);
 		return "user/quiz/capital";
 	}
 	
@@ -85,7 +84,7 @@ public class QuetionController {
 	public String quiz_trivia(Model model) {
 	
 		List<Question> questionList = questionJpaRepository.findQuestionByKind("trivia");
-		List<Quiz> quiz = new ArrayList();
+;
 		System.out.println(questionList);
 		
 		model.addAttribute("questionList", questionList);
@@ -96,7 +95,7 @@ public class QuetionController {
 	public String quiz_proverb(Model model) {
 	
 		List<Question> questionList = questionJpaRepository.findQuestionByKind("proverb");
-		List<Quiz> quiz = new ArrayList();
+
 		System.out.println(questionList);
 		
 		model.addAttribute("questionList", questionList);
@@ -107,7 +106,7 @@ public class QuetionController {
 	public String quiz_nonsense(Model model) {
 	
 		List<Question> questionList = questionJpaRepository.findQuestionByKind("nonsense");
-		List<Quiz> quiz = new ArrayList();
+
 		System.out.println(questionList);
 		
 		model.addAttribute("questionList", questionList);
