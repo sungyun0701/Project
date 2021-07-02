@@ -39,8 +39,8 @@ public class UserScoreController {
 	@GetMapping("/user/scorelist")
 	public String scorelist(Model model) {
 	
-		List <UserScore> userscore = userScoreJpaRepository.no_desc();
-		model.addAttribute("userscore", userscore);
+		List <UserScore> totalscore = userScoreJpaRepository.score_desc();
+		model.addAttribute("totalscore", totalscore);
 		return "user/scorelist";
 	
 	}
@@ -93,42 +93,14 @@ public class UserScoreController {
 //		}
 //		userScoreJpaRepository.saveAll(user_score);
 		System.out.print("2");
-		List <UserScore> userscoreList = userScoreJpaRepository.no_desc();
+		List <UserScore> totalscore = userScoreJpaRepository.score_desc();
 		System.out.print("3");
-		model.addAttribute("userscore", userscoreList);
+		model.addAttribute("totalscore", totalscore);
 		System.out.print("4");
 		return "user/scorelist";
 	}
 	
-	@GetMapping("/admin/score_list")
-	public String admin_scorelist(Model model) {
-		
-		List <UserScore> userscore = userScoreJpaRepository.no_desc();
-		model.addAttribute("userscore", userscore);
 
-		return "admin/score_list";
-	}
-	
-	@GetMapping("/admin/scoreremove/{username}")
-	public String student_remove(Model model,
-								@ModelAttribute("userscore") UserScore userscore) {
-		String username = userscore.getUsername();
-		userScoreJpaRepository.deleteById(userscore.getUsername());
-//		userScoreJpaRepository.deleteById(username);
-		List<UserScore> info = userScoreJpaRepository.no_desc();
-		model.addAttribute("userscore", info);
-		return "admin/score_list";
-	}
-	
-	@GetMapping("/admin/scoreedit/{username}")
-	public String student_edit(@ModelAttribute("userscore") UserScore userscore,
-								Model model) {	
-		
-		model.addAttribute("userscore", userscore);
-		
-		
-		return "admin/scoreedit";
-	}
 	
 	@GetMapping("/user/get_image/{username}")  //이미지 뿌리기
 	public void get_image(@PathVariable("username") String no,  // get_image/6 이렇게 쓰기 위해 씀

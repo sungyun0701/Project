@@ -63,7 +63,7 @@ header.on .innerHeader .logo a img:nth-child(2) {opacity: 1; transition: all 0.3
 
 /*score*/
 .score {overflow:hidden; position: relative; width: 100%; height: 100vh; background:#222;padding: 150px;color: azure;font-size: 20px; font-weight: bold; line-height: 2.7;text-align: center;}
-
+.scoreedit {overflow : auto; position : relative; width : 100%; height : 100vh; background:#222;padding: 100px;color: black;font-size: 15px; font-weight: bold; line-height: 2.3;text-align: center;}
 /*visual*/
 .visual {position: relative;}
 .visual .slide li {position: relative; width: 100%; height: 100vh;background: #222;}

@@ -14,8 +14,8 @@ import com.hmaker.itembank.entity.UserScore;
 
 public interface UserScoreJpaRepository extends JpaRepository<UserScore, String> {
 
-	@Query(value = "Call no_desc();", nativeQuery =true)
-	List<UserScore> no_desc();
+	@Query(value = "Call score_desc;", nativeQuery =true)
+	List<UserScore> score_desc();
 //	
 //	@Query(value = "Call leftjoin();", nativeQuery = true)
 //	List<StudentScore> leftjoin();
