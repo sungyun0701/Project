@@ -47,13 +47,22 @@ public class UserScoreController {
 	
 	@GetMapping("/user/quiz_result")
 	public String Quiz_result_score(Model model,
-//							Principal principal,
-							@RequestParam("username") String username,
+							Principal principal,
+//							@RequestParam("username") String username,
 							@RequestParam("subject") String subject,
 							@RequestParam("score") String score) {
 		System.out.println(subject);
-		System.out.println(username);
 		System.out.print(score);
+		System.out.println(subject);
+		String username = "";
+		if (principal==(null)) {
+			System.out.println(subject);	
+			username = "gest";
+		}
+		else {
+			username = principal.getName();
+		}
+		
 //		repository에서 db에 넘길때 ''가 붙어서 넘어가서 subject를 넘기면 칼럼으로 인식이 안되어서 이렇게 repository에서 직접 쓰고 스위치문으로 대체함
 		switch(subject) {
 			case "capital" :
@@ -69,34 +78,9 @@ public class UserScoreController {
 				userScoreJpaRepository.findUsernameNonsense(score,username);
 				break;
 		}
-		
-		
-		System.out.print("1");
-		
-//		if (principal==(null)) {
-//			model.addAttribute("username", "GEST");
-//			model.addAttribute("subject", subject);
-//			model.addAttribute("score", Integer.parseInt(count)*20);
-//		}
-//		else {
-//			String username = principal.getName();
-//			Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
-//			if(userscore.isPresent()) {
-//				UserScore userScore = userscore.orElse(null);
-//				System.out.println(userScore);
-//				userScore.setCapital(Integer.parseInt(count)*20);
-//				System.out.println(userScore);
-//				model.addAttribute("username", username);
-//				model.addAttribute("subject", subject);
-//				model.addAttribute("score", Integer.parseInt(count)*20);
-//			}
-//		}
-//		userScoreJpaRepository.saveAll(user_score);
-		System.out.print("2");
 		List <UserScore> totalscore = userScoreJpaRepository.score_desc();
-		System.out.print("3");
 		model.addAttribute("totalscore", totalscore);
-		System.out.print("4");
+
 		return "user/scorelist";
 	}
 	

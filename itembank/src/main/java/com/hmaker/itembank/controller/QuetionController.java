@@ -112,33 +112,33 @@ public class QuetionController {
 		model.addAttribute("questionList", questionList);
 		return "user/quiz/nonsense";
 	}
-	
-	@GetMapping("/user/quiz/result")
-	public String quiz_result(@RequestParam("count") String count,
-							@RequestParam("subject") String subject,
-							Principal principal,
-							Model model
-							) throws IOException{
-		
-		if (principal==(null)) {
-			model.addAttribute("username", "GEST");
-			model.addAttribute("subject", subject);
-			model.addAttribute("score", Integer.parseInt(count)*20);
-		}
-		else {
-			String username = principal.getName();
-			Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
-			if(userscore.isPresent()) {
-				UserScore userScore = userscore.orElse(null);
-				System.out.println(userScore);
-				userScore.setCapital(Integer.parseInt(count)*20);
-				System.out.println(userScore);
-				model.addAttribute("username", username);
-				model.addAttribute("subject", subject);
-				model.addAttribute("score", Integer.parseInt(count)*20);
-			}
-		}		
-		return "user/quiz/result";
-	}
+// 밑에꺼 안씀.. 혹시 몰라서 남겨둠	
+//	@GetMapping("/user/quiz/result")
+//	public String quiz_result(@RequestParam("count") String count,
+//							@RequestParam("subject") String subject,
+//							Principal principal,
+//							Model model
+//							) throws IOException{
+//		
+//		if (principal==(null)) {
+//			model.addAttribute("username", "GEST");
+//			model.addAttribute("subject", subject);
+//			model.addAttribute("score", Integer.parseInt(count)*20);
+//		}
+//		else {
+//			String username = principal.getName();
+//			Optional<UserScore> userscore = userScoreJpaRepository.findById(username);
+//			if(userscore.isPresent()) {
+//				UserScore userScore = userscore.orElse(null);
+//				System.out.println(userScore);
+//				userScore.setCapital(Integer.parseInt(count)*20);
+//				System.out.println(userScore);
+//				model.addAttribute("username", username);
+//				model.addAttribute("subject", subject);
+//				model.addAttribute("score", Integer.parseInt(count)*20);
+//			}
+//		}		
+//		return "user/quiz/result";
+//	}
 	
 }
