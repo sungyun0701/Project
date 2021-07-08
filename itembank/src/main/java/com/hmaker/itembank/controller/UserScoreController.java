@@ -50,10 +50,9 @@ public class UserScoreController {
 							Principal principal,
 //							@RequestParam("username") String username,
 							@RequestParam("subject") String subject,
-							@RequestParam("score") String score) {
+							@RequestParam("score") int score) {
 		System.out.println(subject);
 		System.out.print(score);
-		System.out.println(subject);
 		String username = "";
 		if (principal==(null)) {
 			System.out.println(subject);	
@@ -62,6 +61,8 @@ public class UserScoreController {
 		else {
 			username = principal.getName();
 		}
+//		Optional<UserScore> userscore = userScoreJpaRepository.findById(username); // 생각한 두번째 방법
+//		userscore.ifPresent(what -> {what.setCapital(score);});  // 이 내용은 스위치 부분에 해당하는 곳에 넣어서 하면 Repository에서 쿼리 안만들어도 됨
 		
 //		repository에서 db에 넘길때 ''가 붙어서 넘어가서 subject를 넘기면 칼럼으로 인식이 안되어서 이렇게 repository에서 직접 쓰고 스위치문으로 대체함
 		switch(subject) {

@@ -28,21 +28,21 @@ public interface UserScoreJpaRepository extends JpaRepository<UserScore, String>
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
 	@Query(value = "UPDATE user_score as user SET capital=?1 WHERE username = ?2" , nativeQuery = true)
-	void findUsernameCapital(String score,String username);
+	void findUsernameCapital(int score,String username);
 	
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
 	@Query(value = "UPDATE user_score as user SET trivia=?1 WHERE username = ?2" , nativeQuery = true)
-	void findUsernameTrivia(String score, String username);
+	void findUsernameTrivia(int score, String username);
 
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
 	@Query(value = "UPDATE user_score as user SET proverb=?1 WHERE username = ?2" , nativeQuery = true)
-	void findUsernameProverb(String score, String username);
+	void findUsernameProverb(int score, String username);
 
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
 	@Query(value = "UPDATE user_score as user SET nonsense=?1 WHERE username = ?2" , nativeQuery = true)
-	void findUsernameNonsense(String score, String username);
+	void findUsernameNonsense(int score, String username);
 
 }
