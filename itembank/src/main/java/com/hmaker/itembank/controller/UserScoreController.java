@@ -79,6 +79,7 @@ public class UserScoreController {
 				userScoreJpaRepository.findUsernameNonsense(score,username);
 				break;
 		}
+
 		List <UserScore> totalscore = userScoreJpaRepository.score_desc();
 		model.addAttribute("totalscore", totalscore);
 

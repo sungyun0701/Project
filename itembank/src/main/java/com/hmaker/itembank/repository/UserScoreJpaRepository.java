@@ -27,22 +27,22 @@ public interface UserScoreJpaRepository extends JpaRepository<UserScore, String>
 													 // 칼럼 표시하기 ex>@Column(name="student_no")
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
-	@Query(value = "UPDATE user_score as user SET capital=?1 WHERE username = ?2" , nativeQuery = true)
+	@Query(value = "UPDATE user_score as user SET capital=?1, total = (capital+nonsense+trivia+proverb), aver = total/4 WHERE username = ?2" , nativeQuery = true)
 	void findUsernameCapital(int score,String username);
 	
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
-	@Query(value = "UPDATE user_score as user SET trivia=?1 WHERE username = ?2" , nativeQuery = true)
+	@Query(value = "UPDATE user_score as user SET trivia=?1, total = (capital+nonsense+trivia+proverb), aver = total/4 WHERE username = ?2" , nativeQuery = true)
 	void findUsernameTrivia(int score, String username);
 
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
-	@Query(value = "UPDATE user_score as user SET proverb=?1 WHERE username = ?2" , nativeQuery = true)
+	@Query(value = "UPDATE user_score as user SET proverb=?1, total = (capital+nonsense+trivia+proverb), aver = total/4 WHERE username = ?2" , nativeQuery = true)
 	void findUsernameProverb(int score, String username);
 
 	@Transactional
 	@Modifying(clearAutomatically = true, flushAutomatically = true)
-	@Query(value = "UPDATE user_score as user SET nonsense=?1 WHERE username = ?2" , nativeQuery = true)
+	@Query(value = "UPDATE user_score as user SET nonsense=?1, total = (capital+nonsense+trivia+proverb), aver = total/4 WHERE username = ?2" , nativeQuery = true)
 	void findUsernameNonsense(int score, String username);
 
 }

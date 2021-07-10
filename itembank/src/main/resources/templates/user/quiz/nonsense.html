@@ -42,7 +42,7 @@
 		var question = aList[number].question;
 		var idx = number +1;
 		//문제 출력
-		document.getElementById("question").innerHTML=(idx)+"/"+(aList.length)+"  "+question+"의 수도는??";
+		document.getElementById("question").innerHTML=(idx)+"/"+(aList.length)+"  "+question+"??";
 		document.getElementById("submit_btn").style="display:none;";
 	}
 	// 입력 및 정답 확인 함수
@@ -53,9 +53,9 @@
 		if (re==aList[number].answer){	
         	count++;     	
         	document.getElementById("count").value=count; 
-        	document.getElementById("answer").value = "";
         }		
 		if (number+1<aList.length){
+			document.getElementById("answer").value = "";
 			number++;
 			updateQuiz();
 		}

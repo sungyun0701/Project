@@ -65,14 +65,12 @@ public class UserScore {
 		this.nonsense = nonsense;
 	}
 	public double getAver() {
-		this.aver = this.total/4;
 		return aver;
 	}
 	public void setAver(double aver) {
 		this.aver = aver;
 	}
 	public int getTotal() {
-		this.total = this.capital+this.nonsense+this.proverb+this.trivia;
 		return total;
 	}
 	public void setTotal(int total) {
