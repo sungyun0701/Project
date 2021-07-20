@@ -4,8 +4,7 @@
 
 :point_right: **Solve a QUIZ(Itembank)**  
 - **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT,JQUERY // Eclipse(Version 4.17.0), Mysql 8.0, VScode(Version 1.57.1) 
-- **프레임** : DATA JPA
-- **작업기간** :   
+- **프레임** : SPRING DATA JPA
 - **내용**
   - 뷰 템플릿으로 thymeleaf를 사용하여 구성화면과의 데이터를 전달하게 구성.
   - 에러 컨트롤러를 구현하여 에러페이지 관리하도록 구성.
@@ -24,7 +23,6 @@
 :point_right: **Find Pharmacy within selected radius(djangoPharmacy)**  
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm(Version 2021.1.2), MongoDB Atlas(Version 4.4.6)
 - **프레임** : Django 
-- **작업기간** :
 - **내용**
   - data.go.kr에서 csv로 파일로 다운 받을 것을 MongoDB에 업로드
   - pymongo를 통한 MongoDB에 있는 데이터 임포트
@@ -41,7 +39,6 @@
 :point_right: **Movie Data Crawling from naver(flaskNaverMovie_Mongdb)**
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm(Version 2021.1.2), MongoDB Atlas(Version 4.4.6)
 - **프레임** : flask 
-- **작업기간** :
 - **내용**
   - BeautifulSoup를 이용해 네이버 영화 페이지에서 원하는 정보를 크롤링하여 MongoDB에 저장
   - 크롤링 한 데이터를 원하는 형식에 적용하여 웹페이지에 표시
@@ -57,7 +54,6 @@
 
 :point_right: **RC Car Control with Motion Package(CameraJoystick)**
 - **언어 및 작업툴**: Python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, Android-Studio(Version 4.2.1)
-- **작업기간** :
 - **내용**
   - 앱에서 데이터를 Raspberry Pi로 주면 RC Car를 제어할 수 있게 소스코드 작성
   - Joystick 소스코드를 자바로 안드로이드 앱으로 실행되게 작성
