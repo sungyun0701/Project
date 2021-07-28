@@ -1,7 +1,7 @@
 # 간단 소개
 - **Made by SungYun Hwang** 
 - **문제은행 웹사이트 만들기(with Java Spring Data JPA)**
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT,Mysql // Eclipse(Version 4.17.0), Mysql Workbench 8.0, Visual Studio Code(Version 1.57.1)
+- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT // Eclipse(Version 4.17.0), Mysql Workbench 8.0, Visual Studio Code(Version 1.57.1)
 - **프레임** : SPRING DATA JPA
 
 
