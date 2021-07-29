@@ -3,7 +3,7 @@
 ## Project_JAVA
 
 :point_right: **Solve a QUIZ(Itembank)**  
-- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT // Eclipse(Version 4.17.0), Mysql 8.0, VScode(Version 1.57.1) 
+- **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT // Eclipse(Version 4.17.0), Mysql Workbench 8.0, VS Code(Version 1.57.1)
 - **프레임** : SPRING DATA JPA
 - **내용**
   - 뷰 템플릿으로 thymeleaf를 사용하여 구성화면과의 데이터를 전달하게 구성.
