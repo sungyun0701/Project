@@ -15,7 +15,7 @@
   - index(첫화면페이지)는 반응형웹으로 구현(가로길이가 1200,1024,768,650px에 따른 변화)
 - **관련 화면**
   - 결과 화면    
-![](/Item_Bank.gif)
+![Loading...Fail](/Item_Bank.gif)
 <br>
 
 ## Project_Python
