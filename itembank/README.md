@@ -1,4 +1,5 @@
 # 간단 소개
+
 - **Made by SungYun Hwang** 
 - **문제은행 웹사이트 만들기(with Java Spring Data JPA)**
 - **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT // Eclipse(Version 4.17.0), Mysql Workbench 8.0, Visual Studio Code(Version 1.57.1)
@@ -6,6 +7,7 @@
 
 
 # 프로젝트 상세내용
+
 ## :point_right: 주제
 
 - **문제와 간단한 게임을 푸는 반응형 웹페이지 구현**
@@ -27,14 +29,33 @@
 </pre>
 
 ## :point_right: 설계 및 구동화면
-* 초기 Dependencies 설정<br>
+---
+### **초기 Dependencies 설정**<br>
+---
 <img src="../image/spring0.png"  width="700" height="700"><br>
-* <br>
-* <br>
+___
+### **비밀번호 암호화 및 토큰 생성**<br>
+---
+<img src="../image/spring2.png"  width="700" height="700"><br>
+___
+### **시큐리티 적용해 관리자 파일 구분 및 로그인 로그아웃 관리**<br>
+---
+<img src="../image/spring3.png"  width="700" height="700"><br>
+___
+### **Control, Entity, Repository, Class List**<br>
+---
+<img src="../image/spring4.png"><br>  
+___
+### **Template 구성 요소**<br>
+---
+<img src="../image/spring5.png"><br>
+___
+### **CSS파일내에 반응형으로 구현하기 위한 소스코드**<br>
+---
+<img src="../image/spring6.png"  width="700" height="700"><br>
+___
+### **홈페이지 첫 화면(반응형)**<br>
+---
+<img src="../Item_Bank.gif" alt="Loading...Fail?"><br>
 
-### :point_right: 기본 좌표 설정 화면(구글 맵 이용)
-### :point_right: 검색 전 화면
-<!-- <img src="https://github.com/3mstory/3ms/blob/master/3ms%20%EC%BA%A1%EC%B2%98%EC%82%AC%EC%A7%84/tmssulTable.PNG"> -->
-
-## :point_right: 검색 후 화면
 
