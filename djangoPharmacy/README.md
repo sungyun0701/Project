@@ -1,6 +1,6 @@
 # 간단 소개
 - **Made by SungYun Hwang** 
-- **지정한 장소 및 거리내의 약국 검색**
+- **지정한 장소 및 거리내의 약국 검색(Find Pharmacy within selected radius(djangoPharmacy))**
 - **작업기간** : 
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm(Version 2021.1.2), Mongodb Atlas(Version 4.4.6)
 - **프레임** : Django
