@@ -52,7 +52,7 @@
 
 ## Project_Android with Raspberry Pi
 
-:point_right: **RC Car Control with Motion Package(CameraJoystick)**
+:point_right: **RC Car Control with Android App and use motion Package(CameraJoystick)**
 - **언어 및 작업툴**: Python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, Android-Studio(Version 4.2.1)
 - **내용**
   - 앱에서 데이터를 Raspberry Pi로 주면 RC Car를 제어할 수 있게 소스코드 작성
