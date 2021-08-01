@@ -1,13 +1,13 @@
 # 간단 소개
 - **Made by SungYun Hwang with Minju Jeong** 
-- **앱을 통한 RC카 제어 및 화면 출력(RC Car Control with Motion Package(CameraJoystick))**
+- **앱을 통한 RC카 제어 및 화면 출력(RC Car Control with (CameraJoystick))**
 - **언어 및 작업툴**: Python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, Android-Studio(Version 4.2.1)
 
 
 # 프로젝트 상세내용
 ## :point_right: 주제
 <pre>
-* RC Car Control with Motion Package(CameraJoystick)
+* RC Car Control with Android App and use motion Package(CameraJoystick)
 </pre>
 
 ## :point_right: 목적
