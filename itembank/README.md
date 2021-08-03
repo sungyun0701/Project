@@ -57,5 +57,12 @@ ___
 ### **홈페이지 첫 화면(반응형)**<br>
 ---
 <img src="../Item_Bank.gif" alt="Loading...Fail?"><br>
-
-
+  - **화면 크기별 레이아웃(관리자로 로그인)**
+    - 1200×782
+    ![image](https://user-images.githubusercontent.com/80665580/127956741-1ce39b1d-f9cd-4056-bb8b-08673a05e704.png)
+    - 1024×704
+    ![image](https://user-images.githubusercontent.com/80665580/127957035-339d2a76-6468-4d2b-a9fe-ce388306f7dc.png)
+    - 768×704
+    ![image](https://user-images.githubusercontent.com/80665580/127957095-2da3676c-f806-4921-b610-a90a351b1229.png)
+    - 650×704
+    ![image](https://user-images.githubusercontent.com/80665580/127957270-a73ad641-1218-4d9d-83b7-d8e8c797fc81.png)
