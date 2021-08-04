@@ -66,3 +66,9 @@ ___
     ![image](https://user-images.githubusercontent.com/80665580/127957095-2da3676c-f806-4921-b610-a90a351b1229.png)
     - 650×704
     ![image](https://user-images.githubusercontent.com/80665580/127957270-a73ad641-1218-4d9d-83b7-d8e8c797fc81.png)
+  - **관리자 권한으로 점수 확인 페이지**
+    ![image](https://user-images.githubusercontent.com/80665580/128175642-03d5b806-7bde-45f1-a010-5c6d4126f550.png)
+  - **일반 유저 권한으로 점수 확인 페이지**  
+    ![image](https://user-images.githubusercontent.com/80665580/128175777-b2c47794-cd2f-4a74-8553-57fd458f9bc6.png)
+
+
