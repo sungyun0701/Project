@@ -2,7 +2,7 @@
 
 ## Project_JAVA
 
-:point_right: **Solve a QUIZ(Itembank)**  
+:point_right: **[Solve a QUIZ(Itembank)](https://github.com/sungyun0701/Project/tree/main/itembank)**  
 - **언어 및 작업툴**: JAVA(Version 15.0.2),HTML,CSS,JAVASCRIPT // Eclipse(Version 4.17.0), Mysql Workbench 8.0, VS Code(Version 1.57.1)
 - **프레임** : SPRING DATA JPA
 - **내용**
@@ -20,7 +20,7 @@
 
 ## Project_Python
 
-:point_right: **Find Pharmacy within selected radius(djangoPharmacy)**  
+:point_right: **[Find Pharmacy within selected radius(djangoPharmacy)](https://github.com/sungyun0701/Project/tree/main/djangoPharmacy)**  
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm(Version 2021.1.2), MongoDB Atlas(Version 4.4.6)
 - **프레임** : Django 
 - **내용**
@@ -36,7 +36,7 @@
 ![](/pharmacy.png)   
 <br>
 
-:point_right: **Movie Data Crawling from naver(flaskNaverMovie_Mongdb)**
+:point_right: **[Movie Data Crawling from naver(flaskNaverMovie_Mongdb)](https://github.com/sungyun0701/Project/tree/main/flaskNaverMovie_MongDB)**
 - **언어 및 작업툴**: Python(Version 3.9.2),HTML,CSS,JAVASCRIPT // Pycharm(Version 2021.1.2), MongoDB Atlas(Version 4.4.6)
 - **프레임** : flask 
 - **내용**
@@ -52,7 +52,7 @@
 
 ## Project_Android with Raspberry Pi
 
-:point_right: **RC Car Control with Android App and use motion Package(CameraJoystick)**
+:point_right: **[RC Car Control with Android App and use motion Package(CameraJoystick)](https://github.com/sungyun0701/Project/tree/main/CameraJoystick)**
 - **언어 및 작업툴**: Python(Version 3.9.2),JAVA(Version 15.0.2) // Raspberry Pi3, Android-Studio(Version 4.2.1)
 - **내용**
   - 앱에서 데이터를 Raspberry Pi로 주면 RC Car를 제어할 수 있게 소스코드 작성
