@@ -31,5 +31,12 @@
 * 지도에서 mouseover시 표에 표시되도록 구현
 </pre>
 
+## :point_right: 설계 및 구동화면
+  - 공공데이터 포털 사이트(데이터 수집)
+  ![image](https://user-images.githubusercontent.com/80665580/128316218-fb809cff-366a-4fd2-8f6d-3ed67ba61449.png)
+  - MongoDB에 접속(Atlas MongoDB에 데이터는 Studio 3T를 사용해 약국 데이터 입력 // pymongo, dnspython 설치)
+  ![image](https://user-images.githubusercontent.com/80665580/128329472-5014b8eb-c551-48bb-9c7b-c9272e68425f.png)
+
+
 <!-- <img src="https://github.com/3mstory/3ms/blob/master/3ms%20%EC%BA%A1%EC%B2%98%EC%82%AC%EC%A7%84/tmssulTable.PNG"> -->
 
