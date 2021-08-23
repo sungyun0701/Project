@@ -57,7 +57,8 @@ ___
 ### **홈페이지 첫 화면(반응형)**<br>
 ---
 <img src="../Item_Bank.gif" alt="Loading...Fail?"><br>
-  - **화면 크기별 레이아웃(관리자로 로그인)**
+  - **화면 크기별 레이아웃(관리자로 로그인)**<br>
+    <img src="../image/login.gif" width="1280" height="450"><br>
     - 1200×782
     ![image](https://user-images.githubusercontent.com/80665580/127956741-1ce39b1d-f9cd-4056-bb8b-08673a05e704.png)
     - 1024×704
@@ -71,4 +72,9 @@ ___
   - **일반 유저 권한으로 점수 확인 페이지**  
     ![image](https://user-images.githubusercontent.com/80665580/128175777-b2c47794-cd2f-4a74-8553-57fd458f9bc6.png)
 
-
+  - **회원가입 화면**<br>
+<img src="../image/signup.png" width="1280" height="450"><br>
+  - **문제 푸는 화면**<br>
+<img src="../image/solve.gif" width="1280" height="450"><br>
+  - **로그아웃 화면**<br>
+<img src="../image/logout.gif" width="1280" height="450"><br>
