@@ -35,6 +35,11 @@
 </pre>
 ## :point_right: 설계 및 구동화면
 ---
-<!-- ### **초기 Dependencies 설정**<br> -->
-<!-- <img src="https://github.com/3mstory/3ms/blob/master/3ms%20%EC%BA%A1%EC%B2%98%EC%82%AC%EC%A7%84/tmssulTable.PNG"> -->
+### **구동화면**<br>
+---
+<kbd><img src="../image/movie.gif"  width="1200" height="450"></kbd><br>
 
+---
+### **MongoDB에 저장된 데이터**<br>
+---
+<kbd><img src="../image/mongomovie.png"  width="1200" height="450"></kbd><br>
